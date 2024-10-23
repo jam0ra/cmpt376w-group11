@@ -6,6 +6,6 @@ Case: Abusive Workplace Behavior
 
 ## Roles
 Sunil Mann: Story development, narrative writing, and scenario creation
-Mark Danskin : Story development, character development, and dialogue writing
-Bryan Tompkins: Story development and ending scenarios
-John Jamora: Story development and Twine development
+<br> Mark Danskin : Story development, character development, and dialogue writing
+<br> Bryan Tompkins: Story development and ending scenarios
+<br> John Jamora: Story development and Twine development
