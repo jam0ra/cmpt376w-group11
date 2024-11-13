@@ -22,6 +22,10 @@ tw-story, tw-sidebar {
     color: #f3f4f6;
 }
 
+tw-sidebar {
+    display: none !important;
+}
+
 tw-story {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     color: #f3f4f6;
@@ -40,22 +44,6 @@ tw-passage {
     opacity: 0;
     animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-tw-sidebar {
-    background-color: #111827;
-    color: #f3f4f6;
-    padding: 1rem;
-}
-
-tw-icon {
-    color: #f3f4f6;
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
-}
-
-tw-icon:hover {
-    opacity: 1;
 }
 
 .incident {
@@ -98,20 +86,26 @@ tw-expression:first-of-type tw-link:first-of-type {
 }
 
 @keyframes fadeIn {
-    from { 
+    from {
         opacity: 0;
         transform: translateY(10px);
     }
-    to { 
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    75% { transform: translateX(5px); }
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">(function() {
     $(document).on('mouseenter', '.incident', function() {
         $(this).css('animation', 'shake 0.5s');
@@ -128,7 +122,7 @@ tw-expression:first-of-type tw-link:first-of-type {
             }, 200);
         });
     }, 3000);
-})();</script><tw-passagedata pid="1" name="Start" tags="" position="1825,75" size="100,100">[[Return to Group 11 Details-&gt;Group 11]]
+})();</script><tw-passagedata pid="1" name="Start" tags="" position="1725,75" size="100,100">[[Return to Group 11 Details-&gt;Group 11]]
 
 You&#39;ve just started your new job at &#39;&#39;Company Inc&#39;&#39;.
 
@@ -139,34 +133,37 @@ You know you need to do something about this situation.
 After hearing this, what is your next course of action?
 
 [[Talk to Sammy about it first-&gt;Talk to Sammy]]
-[[Confront Josh directly about his treatment of Sammy-&gt;Confront Josh]]</tw-passagedata><tw-passagedata pid="2" name="Talk to Sammy" tags="" position="1025,1250" size="100,100">Sammy opens up about how Josh is effecting her. His comments are making her anxious and stressed out to come to work. She asks if you can talk to him or if she should go straight to HR?
+[[Confront Josh directly about his treatment of Sammy-&gt;Confront Josh]]</tw-passagedata><tw-passagedata pid="2" name="Talk to Sammy" tags="" position="1050,1225" size="100,100">Sammy opens up about how Josh is effecting her. His comments are making her anxious and stressed out to come to work. She asks if you can talk to him or if she should go straight to HR?
 
 [[Help her out and talk to Josh-&gt;Meeting with Josh]]
-[[Suggest she talk to HR-&gt;Suggest HR]]</tw-passagedata><tw-passagedata pid="3" name="Confront Josh" tags="" position="2375,325" size="100,100">Josh says it is just his way of doing things and that Sammy should toughen up. He then reminds you that he is in charge and that it is not your place to talk back.
+[[Suggest she talk to HR-&gt;Suggest HR]]</tw-passagedata><tw-passagedata pid="3" name="Confront Josh" tags="" position="2225,25" size="100,100">Josh says it is just his way of doing things and that Sammy should toughen up. He then reminds you that he is in charge and that it is not your place to talk back.
 
 How do you want to approach this?
 
 [[Accept Josh&#39;s Reasoning-&gt;Accept Josh]]
+[[Stand your ground-&gt;Stand your ground]]
 [[Take a different approach-&gt;Professional Stand]]
 
-</tw-passagedata><tw-passagedata pid="4" name="Suggest HR" tags="" position="1500,1225" size="100,100">Sammy takes your advice and files a report with HR. A formal investigation is opened, and the company begins looking into Josh’s behavior. Ashley from HR books a meeting with you to discuss Josh&#39;s behavior.
+</tw-passagedata><tw-passagedata pid="4" name="Suggest HR" tags="" position="825,400" size="100,100">Sammy takes your advice and files a report with HR. A formal investigation is opened, and the company begins looking into Josh’s behavior. Ashley from HR books a meeting with you to discuss Josh&#39;s behavior.
 
-[[Continue -&gt;Approached by Josh]]</tw-passagedata><tw-passagedata pid="5" name="Professional Stand" tags="" position="2875,1000" size="100,100">Instead of arguing with Josh directly, you realize a different approach is needed. You&#39;ve seen the pattern - how he isolates people first, then escalates his behavior once they&#39;re cut off from support. As you watch him return to his desk, you consider your options carefully.
+[[Continue -&gt;Approached by Josh]]</tw-passagedata><tw-passagedata pid="5" name="Professional Stand" tags="" position="3200,75" size="100,100">Instead of arguing with Josh directly, you pause to think strategically. You&#39;ve seen his pattern - how he isolates people before escalating his behavior, how he maintains a perfect image with senior management while quietly undermining others. As you watch him chat easily with the CEO in the break room, you realize this needs a smarter approach.
 
-[[Build team connections-&gt;Team Building]]
-[[Contact former employees-&gt;Former Colleagues]]</tw-passagedata><tw-passagedata pid="6" name="Accept Josh" tags="" position="2200,650" size="100,100">You talk to Sammy and explain that you talked to Josh and she should toughen up to his constructive criticism
+Sammy&#39;s hands were shaking in this morning&#39;s meeting, and you&#39;ve noticed other team members starting to avoid eye contact when Josh enters the room. Something needs to change.
 
-[[Continue -&gt;Anxious Sammy]]</tw-passagedata><tw-passagedata pid="7" name="Meeting with Josh" tags="" position="1550,750" size="100,100">You setup a meeting with Josh to discuss the matter.  Josh says that this is his way of doing things and Sammy needs to grow thicker skin. He also emphasizes that shes just acting like a woman and needs to man up.
+[[Talk to the team about it-&gt;Team Building]]
+[[Look into similar past incidents-&gt;Former Colleagues]]</tw-passagedata><tw-passagedata pid="6" name="Accept Josh" tags="" position="2300,375" size="100,100">You talk to Sammy and explain that you talked to Josh and she should toughen up to his constructive criticism
+
+[[Continue -&gt;Anxious Sammy]]</tw-passagedata><tw-passagedata pid="7" name="Meeting with Josh" tags="" position="1325,250" size="100,100">You setup a meeting with Josh to discuss the matter.  Josh explains that this is his way of doing things and Sammy needs to grow thicker skin. He emphasizes that she&#39;s acting like a woman and needs to stop being so emotional.
 
 What do you say?
 
 [[Tell Josh his comments are insensitive-&gt;Disagree with Josh]]
-[[Accept Josh&#39;s reasoning-&gt;Agree with Josh]]</tw-passagedata><tw-passagedata pid="8" name="Disagree with Josh" tags="" position="1725,525" size="100,100">Josh gives you a look of confusion, he thought you were on his side. He tries to backpedal by saying that he&#39;s from an older time when people would get things done and not whine about. 
+[[Accept Josh&#39;s reasoning-&gt;Agree with Josh]]</tw-passagedata><tw-passagedata pid="8" name="Disagree with Josh" tags="" position="1575,325" size="100,100">Josh gives you a look of confusion, he thought you were on his side. He tries to explain his side by saying that he&#39;s from an older time when people would get things done. He says that he wants to help the young ones learn to get things done instead of whining about it. 
 
 [[Agree and tell him to just be nicer in the future-&gt;Josh Potential]]
 [[Disagree with him on this-&gt;Cheap Excuse Ending]]</tw-passagedata><tw-passagedata pid="9" name="Agree with Josh" tags="" position="1250,750" size="100,100">You talk to Sammy and explain that you talked to Josh and she should toughen up to his constructive criticism
 
-[[Continue -&gt;Anxious Sammy]]</tw-passagedata><tw-passagedata pid="10" name="Approached by Josh" tags="" position="1300,500" size="100,100">Josh approaches you, he seems to be anxious and upset. He mentions how as &quot;management&quot; we should&#39;ve stuck together on this one.  He also reminds you 
+[[Continue -&gt;Anxious Sammy]]</tw-passagedata><tw-passagedata pid="10" name="Approached by Josh" tags="" position="1325,525" size="100,100">Josh approaches you, he seems to be anxious and upset. He mentions how as &quot;management&quot; we should&#39;ve stuck together on this one.  He also reminds you 
 that Sammy previously reported you for being late several times, and urges you to lie about his comments about her.
 
 [[You hold your ground and tell him that you won&#39;t lie about this-&gt;Tell the Truth Ending 1]]
@@ -174,7 +171,7 @@ that Sammy previously reported you for being late several times, and urges you t
 
 [[Restart|Start]]</tw-passagedata><tw-passagedata pid="12" name="Tell a Lie" tags="" position="1300,900" size="100,100">You tell HR that Sammy is embellishing details about the story and Josh was merely giving constructive criticism.  The investigaton is closed due to a lack of evidence.
 
-[[Continue-&gt;Sammy Quit]]</tw-passagedata><tw-passagedata pid="13" name="Sammy Quit" tags="" position="1775,1200" size="100,100">The following week you’re in a meeting with Josh and another coworker. As you’re discussing a new project. Josh mentions that Sammy quit last night, suggesting that she couldn&#39;t handle real work. Josh then makes an inappropriate lewd comment about Sammy and both laugh.
+[[Continue-&gt;Sammy Quit]]</tw-passagedata><tw-passagedata pid="13" name="Sammy Quit" tags="" position="1975,1150" size="100,100">The following week you’re in a meeting with Josh and another coworker. As you’re discussing a new project. Josh mentions that Sammy quit last night, suggesting that she couldn&#39;t handle real work. Josh then makes an inappropriate lewd comment about Sammy and both laugh.
 
 [[Stand up for Sammy, leaving the office to file a report with Ashley in HR -&gt;Stand up for Sammy]]
 [[Fake a laugh along with them-&gt;Fake Laugh Ending]]</tw-passagedata><tw-passagedata pid="14" name="Stand up for Sammy" tags="" position="1250,1250" size="100,100">You leave the office, heading straight to HR. You know that what Josh said was beyond inappropriate, and it’s time someone put a stop to his behavior. When you meet with Ashley in HR, you detail the remarks Josh made about Sammy and how she quit because of his treatment. Ashley then sternly asks you why you didn&#39;t speak up sooner.
@@ -189,91 +186,97 @@ As a result of the investigation, Josh is terminated from the company. Sammy is 
 Though Josh is gone, and justice seems to have been served, you can’t help but feel conflicted. You protected yourself, but at what cost? Sammy won’t return, and the damage done to her can’t be undone. The situation may be resolved, but it leaves a bitter taste
 
 
-[[Restart|Start]]</tw-passagedata><tw-passagedata pid="17" name="Truth Again Ending" tags="" position="1675,900" size="100,100">You express deep regret to Ashley for not speaking up sooner, explaining that you were afraid of workplace retaliation but now understand the importance of stopping harassment. You provide detailed documentation of Josh&#39;s pattern of inappropriate behaviour and commit to being an active ally against workplace harassment moving forward. Your honest testimony helps ensure proper disciplinary action is taken.
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="17" name="Truth Again Ending" tags="" position="1475,1325" size="100,100">You express deep regret to Ashley for not speaking up sooner, explaining that you were afraid of workplace retaliation but now understand the importance of stopping harassment. You provide detailed documentation of Josh&#39;s pattern of inappropriate behaviour and commit to being an active ally against workplace harassment moving forward. Your honest testimony helps ensure proper disciplinary action is taken.
 
-[[Restart|Start]]</tw-passagedata><tw-passagedata pid="18" name="Anxious Sammy" tags="" position="2425,450" size="100,100">Over the next few weeks, you notice Sammy becoming increasingly withdrawn and anxious. Her work starts to suffer, and she seems to avoid any interaction with Josh.
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="18" name="Anxious Sammy" tags="" position="2400,675" size="100,100">Over the next few weeks, you notice Sammy becoming increasingly withdrawn and anxious. Her work starts to suffer, and she seems to avoid any interaction with Josh.
 
 [[Offer help to sammy -&gt;Help Sammy]]
 [[Keep your distance and dont get involved -&gt;Sammy Withdrawals]]</tw-passagedata><tw-passagedata pid="19" name="Help Sammy" tags="" position="725,1175" size="100,100">You approach Sammy one day and offer to help her catch up on her work. Sammy is initially reluctant but eventually opens up about how difficult it has been to work under Josh’s leadership.
 
 [[Advise her to toughen up-&gt;Sammy Toughen Up]]
-[[Encourage her to report Josh&#39;s behavior to HR]]</tw-passagedata><tw-passagedata pid="20" name="Sammy Withdrawals" tags="" position="650,775" size="100,100">Over the next few weeks, you continue to notice Sammy becoming more withdrawn. One afternoon, as you’re passing by her office, you overhear Josh raising his voice at Sammy.  
+[[Encourage her to report Josh&#39;s behavior to HR]]</tw-passagedata><tw-passagedata pid="20" name="Sammy Withdrawals" tags="" position="1675,1350" size="100,100">Over the next few weeks, you continue to notice Sammy becoming more withdrawn. One afternoon, as you’re passing by her office, you overhear Josh raising his voice at Sammy.  
 “Why can’t you get anything right? Honestly, I don’t even know why we bother hiring women for these positions, they&#39;re just not cut out for real work.”
 
 [[Step in and confront Josh -&gt;Confront Josh 2.0]]
-[[Continue walking, fearing for your own job if you get involved -&gt;Not my Problem]]</tw-passagedata><tw-passagedata pid="21" name="Confront Josh 2.0" tags="" position="1875,600" size="100,100">You firmly tell Josh that his comments need to be reported to HR, and that Sammy deserves to work in a respectful environment. Josh tries to brush it off as a misunderstanding, but you refuse to let it go. Sammy, emboldened by your support, agrees to file a report with HR as well.
+[[Continue walking, fearing for your own job if you get involved -&gt;Not my Problem]]</tw-passagedata><tw-passagedata pid="21" name="Confront Josh 2.0" tags="" position="1725,725" size="100,100">You firmly tell Josh that his comments need to be reported to HR, and that Sammy deserves to work in a respectful environment. Josh tries to brush it off as a misunderstanding, but you refuse to let it go. Sammy, emboldened by your support, agrees to file a report with HR as well.
 
 [[Continue-&gt;Josh on Josh]]</tw-passagedata><tw-passagedata pid="22" name="Not my Problem" tags="" position="2225,950" size="100,100">You keep walking past Sammy’s office. You tell yourself it’s not your place to get involved. After all, you’ve already decided to keep your distance. But Josh’s comment about women being “useless” sticks in your mind.
 
 [[Continue-&gt;Sammy Quit]]</tw-passagedata><tw-passagedata pid="23" name="Encourage her to report Josh&#39;s behavior to HR" tags="" position="2100,475" size="100,100">Sammy takes your advice and files a report with HR. A formal investigation is opened, and the company begins looking into Josh’s behavior. Ashley from HR books a meeting with you to discuss Josh&#39;s behavior.
 
-[[Continue-&gt;Josh on Josh]]</tw-passagedata><tw-passagedata pid="24" name="Sammy Toughen Up" tags="" position="1050,575" size="100,100">You tell Sammy that everyone has a hard time with Josh at first, but it gets better once﻿ you get used to his leadership style. Sammy takes your advice and decides to stick it out.
+[[Continue-&gt;Josh on Josh]]</tw-passagedata><tw-passagedata pid="24" name="Sammy Toughen Up" tags="" position="1050,575" size="100,100">You talk to Sammy and explain that you talked to Josh and she should toughen up to his criticism. She clearly looks to be upset with your words but gives you an &quot;okay&quot;.
 
-[[Continue-&gt;Sammy Withdrawals]]</tw-passagedata><tw-passagedata pid="25" name="Josh Potential" tags="" position="2150,1225" size="100,100">For a little bit things seem to be going well but then Sammy tells you that he still makes comments whenever she does anything wrong. She also informs you that she is going to contact HR about this.
-
+[[Continue-&gt;Sammy Withdrawals]]</tw-passagedata><tw-passagedata pid="25" name="Josh Potential" tags="" position="2350,1300" size="100,100">For a little bit things seem to be going well but then Sammy tells you that he still makes comments whenever she does anything wrong. She informs you that she is going to contact HR about this as it is really getting to her.
 
 [[You tell her that she is blowing this out of proportion-&gt;Sammy Betrayed]]
-[[You tell her that is a good idea as the issue is not solved-&gt;Suggest HR]]</tw-passagedata><tw-passagedata pid="26" name="Cheap Excuse Ending" tags="" position="1825,900" size="100,100">You tell Josh that his age is not an excuse to harass someone. You try to explain that what he is doing is inappropriate, and that he needs to treat every member of his team with respect. You let him off with a warning but explain that you will escalate this to HR if it pops up again.
+[[You tell her that is a good idea as the issue is not solved-&gt;Suggest HR]]</tw-passagedata><tw-passagedata pid="26" name="Cheap Excuse Ending" tags="" position="1600,650" size="100,100">You tell Josh that his age is not an excuse to harass someone. You try to explain that what he is doing is inappropriate, and that he needs to treat every member of his team with respect. You let him off with a warning but explain that you will escalate this to HR if it pops up again.
 
 Josh is not happy with this but he agrees as he can see that this is the better option for him.
 
-[[Restart|Start]]</tw-passagedata><tw-passagedata pid="27" name="Sammy Betrayed" tags="" position="1850,750" size="100,100">She gives you a look of betrayal. She tells you that it wasn&#39;t an offer and she is not backing down. The next day you are informed that Ashley from HR has booked a meeting to discuss Josh&#39;s behaviour.
+[[Continue-&gt;Going Forward]]</tw-passagedata><tw-passagedata pid="27" name="Sammy Betrayed" tags="" position="1925,1375" size="100,100">She gives you a look of betrayal. She tells you that it wasn&#39;t an offer and she is not backing down. The next day you are informed that Ashley from HR has booked a meeting to discuss Josh&#39;s behaviour.
 
 [[Continue -&gt;Approached by Josh]]</tw-passagedata><tw-passagedata pid="28" name="Josh on Josh" tags="" position="2525,1100" size="100,100">Josh approaches you in private, seemingly anxious about his investigation. He reminds you that Sammy previously reported you for being late several times, and urges you to lie about his comments about her.
 
 [[You tell the truth about Josh&#39;s comments-&gt;Tell the Truth Ending 2]]
-[[You lie to protect Josh-&gt;Protect Josh]]</tw-passagedata><tw-passagedata pid="29" name="Protect Josh" tags="" position="2475,650" size="100,100">You tell HR that Sammy is embellishing the remarks make by Josh, and affirm that he was only giving her constructive criticism about the project. The investigation against Josh is closed for lack of evidence.
+[[You lie to protect Josh-&gt;Protect Josh]]</tw-passagedata><tw-passagedata pid="29" name="Protect Josh" tags="" position="2275,825" size="100,100">You tell HR that Sammy is embellishing the remarks make by Josh, and affirm that he was only giving her constructive criticism about the project. The investigation against Josh is closed for lack of evidence.
 
-[[Continue-&gt;Sammy Quit]]</tw-passagedata><tw-passagedata pid="30" name="Team Building" tags="" position="2775,1025" size="100,100">You begin organizing casual team lunches and coffee breaks, creating safe spaces for conversation away from Josh&#39;s presence. Over time, you notice people opening up more, sharing nervous glances when Josh&#39;s name comes up, and you realize how many others have been suffering in silence.
+[[Continue-&gt;Sammy Quit]]</tw-passagedata><tw-passagedata pid="30" name="Team Building" tags="" position="3075,175" size="100,100">You begin organizing casual team lunches and coffee breaks, creating spaces for conversation away from Josh&#39;s presence. It works - people share nervous glances when his name comes up, and you discover how many others have been suffering in silence.
 
-[[Create support network-&gt;Digital Network]]
-[[Organize group meetings-&gt;Small Groups]]</tw-passagedata><tw-passagedata pid="31" name="Former Colleagues" tags="" position="3000,1050" size="100,100">Through LinkedIn and private messages, you connect with several people who recently left the company. Each conversation reveals an identical pattern: targeted harassment, management&#39;s indifference, followed by a quiet resignation. Their stories mirror exactly what&#39;s happening now.
+Josh calls you into his office. He&#39;s &quot;noticed these unauthorized team meetings&quot; and reminds you that your upcoming performance review includes &quot;organizational alignment.&quot;
 
-[[Share findings with team-&gt;Unite Information]]
-[[Document testimonies-&gt;Evidence Building]]</tw-passagedata><tw-passagedata pid="32" name="Tell the Truth Ending 1" tags="" position="975,1000" size="100,100">Josh is upset with your actions. He says that you have betrayed him and taken her lying side. During the meetings with Ashley from HR, you explain how Josh was treating Sammy.
- Josh is sent to sensitivity training to try to educate him on how to properly communicate with his co-workers.
-Sammy thanks you for your help as she feels more safe at work now.
+[[Create a group chat-&gt;Digital Network]]
+[[Keep meeting in person-&gt;Small Groups]]</tw-passagedata><tw-passagedata pid="31" name="Former Colleagues" tags="" position="3300,300" size="100,100">Through careful LinkedIn messages, you connect with five people who recently left the company. Each conversation reveals an identical pattern: targeted harassment, isolation, followed by a quiet resignation or a sudden &quot;performance-based&quot; termination.
 
-[[Restart|Start]]</tw-passagedata><tw-passagedata pid="33" name="Digital Network" tags="" position="2675,1200" size="100,100">You create a private Slack channel, supposedly for project updates. It quickly becomes a warning system - team members alert others about Josh&#39;s moods, support those he&#39;s targeting, and share strategies for protecting each other. The digital solidarity grows stronger each day.
+Sarah from accounting has emails proving Josh&#39;s behavior, but she signed an NDA during her exit. Breaking it could cost her current job and savings. Your LinkedIn notifications show Josh viewing your profile.
 
-[[Expand to in-person support-&gt;Growing Movement]]
-[[Maintain digital sanctuary-&gt;Safe Space]]</tw-passagedata><tw-passagedata pid="34" name="Small Groups" tags="" position="2800,1200" size="100,100">You begin holding small team meetings before the official ones, planning how to support each other. When Josh interrupts someone, another person immediately picks up their point. When he criticizes unfairly, someone else provides positive feedback.
+[[Share what you learned-&gt;Unite Information]]
+[[Gather written statements-&gt;Evidence Building]]</tw-passagedata><tw-passagedata pid="32" name="Tell the Truth Ending 1" tags="" position="975,1000" size="100,100">Josh is upset with your actions. He says that you have betrayed him and taken her lying side. During the meetings with Ashley from HR, you explain how Josh was treating Sammy.
 
-[[Formalize the approach-&gt;System Change]]
-[[Build quiet resistance-&gt;Underground Network]]</tw-passagedata><tw-passagedata pid="35" name="Unite Information" tags="" position="3000,1225" size="100,100">Combining current experiences with former employees&#39; stories, a clear pattern emerges that&#39;s impossible to dismiss as isolated incidents. The team begins to understand they&#39;re part of a larger problem that needs addressing.
+Josh is sent to sensitivity training to try to educate him on how to properly communicate with his co-workers. This training seems to help but Josh still ends up meeting with HR more often in the future, leading to him eventually being fired.
+ 
+Sammy thanks you for your help as you helped her and she can feel more safe at work. She flourishes under the new environment where she can learn from her mistakes.
 
-[[Move to open resistance-&gt;Collective Stand Ending]]
-[[Build evidence quietly-&gt;Careful Documentation]]</tw-passagedata><tw-passagedata pid="36" name="Evidence Building" tags="" position="3175,1225" size="100,100">You carefully compile testimonies, emails, and incident reports, building a comprehensive picture of Josh&#39;s behavior over time. The pattern is clear, but exposing it could make you a target.
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="33" name="Digital Network" tags="" position="2900,375" size="100,100">You create a private Slack channel for &quot;project updates.&quot; It becomes a warning system - team members alert others about Josh&#39;s moods and share support strategies. The digital solidarity grows stronger each day.
 
-[[Share with management-&gt;Direct Challenge Ending]]
-[[Share with team-&gt;Growing Movement]]
-</tw-passagedata><tw-passagedata pid="37" name="Growing Movement" tags="" position="2525,1375" size="100,100">The support network grows stronger as more people join. In meetings, team members now back each other up automatically. Josh&#39;s attempts to isolate individuals keep failing as the group maintains its solidarity.
+During a team meeting, Josh humiliates Sammy again. She stares at her screen, typing rapidly as he continues his criticism.
 
-[[Push for change-&gt;Collective Stand Ending]]
-[[Maintain support system-&gt;Open Forums Ending]]</tw-passagedata><tw-passagedata pid="38" name="Safe Space" tags="" position="2725,1375" size="100,100">The support network becomes a reliable system. New team members are quietly brought in, warning signs are shared, and nobody faces Josh&#39;s behavior alone anymore. It&#39;s not perfect, but it provides some protection.
+[[Speak up in the meeting-&gt;Public Defense]]
+[[Keep to the online support-&gt;Safe Space]]</tw-passagedata><tw-passagedata pid="34" name="Small Groups" tags="" position="3200,325" size="100,100">Your pre-meeting strategy sessions make a difference. When Josh interrupts someone, another person immediately picks up their point. When he criticizes unfairly, someone else highlights the good aspects of the work.
 
-[[Move to open resistance-&gt;Open Forums Ending]]
-[[Keep building support-&gt;Careful Documentation]]</tw-passagedata><tw-passagedata pid="39" name="System Change" tags="" position="2875,1375" size="100,100">You propose new meeting structures and feedback processes that make it harder for Josh to single people out. Every critique must happen in group settings, every project review needs multiple perspectives.
+Josh starts scheduling last-minute conflicts for key team members, making it harder to meet. He announces that all team gatherings must now have a manager present &quot;to ensure productivity.&quot;
 
-[[Push changes through-&gt;Open Forums Ending]]
-[[Face resistance-&gt;Direct Challenge Ending]]</tw-passagedata><tw-passagedata pid="40" name="Underground Network" tags="" position="3050,1375" size="100,100">A subtle system of support develops - quick glances, strategic meeting seats, careful interruptions when Josh starts his targeting. The team protects its own without being obvious about it.
+[[Make the meetings official-&gt;System Change]]
+[[Find subtle ways to help-&gt;Underground Network]]</tw-passagedata><tw-passagedata pid="35" name="Unite Information" tags="" position="3225,500" size="100,100">Combining current experiences with former employees&#39; anonymized stories, you help the team see they&#39;re part of a systematic problem. People begin supporting each other more openly, refusing to let colleagues face Josh alone.
 
-[[Strengthen network-&gt;Safe Space]]
-[[Challenge openly-&gt;System Change]]</tw-passagedata><tw-passagedata pid="41" name="Collective Stand Ending" tags="" position="2450,900" size="100,100">The team&#39;s unity becomes an unmistakable force. When Josh tries to target someone, multiple people speak up. His attempts to isolate and intimidate individuals crumble against the group&#39;s solidarity.
+In your private performance review, Josh mentions how &quot;team cohesion&quot; sometimes interferes with &quot;individual growth opportunities.&quot; 
 
-The team&#39;s unified resistance breaks Josh&#39;s power to harass others. The constant pushback forces management to address his behavior formally. Your workplace transforms into an example of how solidarity defeats abuse.
+[[Stand up as a team-&gt;Collective Stand Ending]]
+[[Keep gathering evidence-&gt;Careful Documentation]]</tw-passagedata><tw-passagedata pid="36" name="Evidence Building" tags="" position="3425,525" size="100,100">You carefully compile testimonies, emails, and incident reports. The pattern is undeniable. An email arrives from Josh requesting an immediate &quot;career development discussion.&quot;
 
-[[Restart|Start]]
-</tw-passagedata><tw-passagedata pid="42" name="Careful Documentation" tags="" position="3225,1375" size="100,100">Every incident, every pattern, every witness account gets carefully recorded. The evidence builds slowly but steadily, creating an undeniable record of what&#39;s really happening in the workplace.
+He knows about your contact with former employees. The team lead position you&#39;ve wanted for two years could be yours. All it takes is dropping this &quot;misunderstanding about management styles.&quot;
 
-[[Present findings-&gt;Direct Challenge Ending]]
-[[Share with team-&gt;Open Forums Ending]]</tw-passagedata><tw-passagedata pid="43" name="Direct Challenge Ending" tags="" position="2650,875" size="100,100">Your efforts to create change force Josh to either reform or show his true nature. He chooses the latter, becoming more strategic and vindictive in his retaliation against those who challenge him.
+[[Report everything to HR-&gt;Direct Challenge Ending]]
+[[Take the promotion-&gt;Growing Movement]]</tw-passagedata><tw-passagedata pid="37" name="Growing Movement" tags="" position="2850,1150" size="100,100">The promotion would mean more influence, authority to make changes, protection for future employees. But accepting it means burying the evidence of what happened to Sammy and the others.
 
-Management sides with Josh. People who spoke up find their roles &quot;restructured&quot; or their projects reassigned. Performance reviews mysteriously cite &quot;communication issues.&quot; One by one, people quit or accept transfers to dead-end positions. The system works as intended, protecting those in power.
+[[Continue-&gt;Open Forums Ending]]</tw-passagedata><tw-passagedata pid="38" name="Safe Space" tags="" position="3075,550" size="100,100">The group chat becomes more active. People warn each other about Josh&#39;s moods, share advice about dealing with him. But in meetings, you still have to watch silently as others get targeted.
 
-[[Restart|Start]]</tw-passagedata><tw-passagedata pid="44" name="Open Forums Ending" tags="" position="2350,1125" size="100,100">Team meetings become a space where Josh&#39;s behavior is subtly but consistently challenged. His attempts to bully team members happen in front of witnesses now, making his tactics more visible to everyone, including other managers.
+[[Continue-&gt;Careful Documentation]]</tw-passagedata><tw-passagedata pid="39" name="System Change" tags="" position="3100,700" size="100,100">Your request for official team-building time passes through HR. Josh can&#39;t stop the meetings, but his presence changes the dynamic. The team maintains their professionalism while finding ways to support each other.
 
-Josh keeps his position, but public scrutiny forces him to behave. The team maintains its protective network, making it harder for him to target individuals. Not a complete victory, but people are safer.
+[[Continue-&gt;Open Forums Ending]]</tw-passagedata><tw-passagedata pid="40" name="Underground Network" tags="" position="3300,700" size="100,100">The team finds ways to help each other. A coffee cup placed in a certain spot means warning. Specific seating arrangements in meetings ensure no one faces Josh alone.
+
+[[Continue-&gt;Open Forums Ending]]</tw-passagedata><tw-passagedata pid="41" name="Collective Stand Ending" tags="" position="2950,1050" size="100,100">The team&#39;s unity becomes its own kind of force. When Josh targets someone, others speak up. His attempts to isolate and intimidate individuals falter against the group&#39;s solidarity.
+
+Management can&#39;t ignore the unified resistance forever. Josh&#39;s behavior faces formal review. The workplace slowly transforms, showing how collective action can overcome systemic abuse. Though some team members faced retaliation, the unified front proved stronger than individual harassment.
+
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="42" name="Careful Documentation" tags="" position="3550,725" size="100,100">You record each incident, pattern, and witness account. Pages of evidence accumulate, documenting the reality of what&#39;s happening in careful, professional language.
+
+[[Continue-&gt;Direct Challenge Ending]]</tw-passagedata><tw-passagedata pid="43" name="Direct Challenge Ending" tags="" position="3325,1050" size="100,100">Your evidence forces Josh to reveal his true nature. His retaliation becomes strategic, methodical. Management stands with him, and they always did.
+
+People who spoke up find their roles &quot;restructured,&quot; their projects reassigned. Performance reviews cite mysterious &quot;communication issues.&quot; One by one, your colleagues transfer out or quit. The system protects its own, and you learn the hard way that documented evidence means nothing without institutional support.
+
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="44" name="Open Forums Ending" tags="" position="2625,1125" size="100,100">During team meetings, colleagues have begun to regularly push back against Josh&#39;s conduct. His attempts to bully team members now happen in front of witnesses, including other managers.
+
+Josh stays in his position, but public scrutiny limits what he can do. The team looks out for each other, making it harder for him to target individuals. It&#39;s not a complete victory, but the workplace has changed.
 
 [[Restart|Start]]</tw-passagedata><tw-passagedata pid="45" name="Group 11" tags="" position="1025,150" size="100,100">&lt;h3&gt;Group 11 - CMPT 376W&lt;/h3&gt;
 
@@ -283,11 +286,48 @@ Josh keeps his position, but public scrutiny forces him to behave. The team main
 
 &lt;h4&gt;Roles&lt;/h4&gt;
 &#39;&#39;Sunil Mann&#39;&#39;: Story development, narrative writing, and scenario creation
-&#39;&#39;Mark Danskin&#39;&#39; : Story development, character development, and dialogue writing
+&#39;&#39;Mark Danskin&#39;&#39;: Story development, character development, and dialogue writing
 &#39;&#39;Bryan Tompkins&#39;&#39;: Story development and ending scenarios
 &#39;&#39;John Jamora&#39;&#39;: Story development and Twine development
 
-[[Click here to start-&gt;Start]]</tw-passagedata></tw-storydata>
+[[Click here to start-&gt;Start]]</tw-passagedata><tw-passagedata pid="46" name="Public Defense" tags="" position="2800,0" size="100,100">The room goes quiet as you challenge Josh&#39;s treatment of Sammy. Other team members look down at their notebooks. Sammy glances at you quickly before returning to her screen. Josh writes something in his planner.
+
+[[Continue-&gt;Open Forums Ending]]</tw-passagedata><tw-passagedata pid="47" name="Stand your ground" tags="" position="2525,125" size="100,100">You stand your ground and tell Josh that sexist remarks and hostile behaviour have no place in a professional workplace.
+
+[[Continue-&gt;Josh Angry]]</tw-passagedata><tw-passagedata pid="48" name="Going Forward" tags="" position="1850,925" size="100,100">Going  forward you notice that Josh is more careful with his wording. Clearly your relationship with him is more strained as he is not as open to you anymore, whether that be for good or bad. 
+TAs for Sammy, she is starting to flourish as she is getting more comfortable with her role. Even Josh seems to like her more as they are able to find more common ground.
+
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="49" name="Josh Angry" tags="" position="2625,275" size="100,100">Josh angrily responds by suggesting that he didn&#39;t mean anything sexist by his remarks, and reiterates that he just doesn&#39;t think that Sammy is any use to the company. He suggests that she should be removed from the team.
+
+[[Leave it and walk away feeling like you did what you could-&gt;Leave it]]
+[[Press The Issue Further-&gt;Press The Issue Further]]</tw-passagedata><tw-passagedata pid="50" name="Leave it" tags="" position="2500,475" size="100,100">The next day when you come into work, you hear from another team member that Josh has written Sammy up, and sent a complaint about her performance to management. Sammy was apparently crying, and wondering about her future with the company after being written up so soon into her employment.
+
+[[Decide To Help Sammy|Help Sammy]]
+[[Do nothing|Sammy Withdrawals]]</tw-passagedata><tw-passagedata pid="51" name="Press The Issue Further" tags="" position="2750,375" size="100,100">You tell Josh that his comment was indeed sexist, and you tell him that you dont think that is appropriate for the workplace. You suggest that you will have to report this issue to HR. Josh responds with a threat, telling you that he can and will have you removed from his team for this.
+
+When you come into work the next day you are pulled into the HR office for a meeting. You are told that Josh reported you for cursing at him, and for making false accusations.
+
+[[Insist that Josh was in the wrong and ask for HR to meet with Sammy-&gt;Insist that Josh]]
+[[Downplay and suggest that you just felt the need to stand up for Sammy-&gt;Downplay]]
+</tw-passagedata><tw-passagedata pid="52" name="Downplay" tags="" position="2925,550" size="100,100">In the HR meeting, the accusations are addressed, and you downplay your comments, explaining that you simply felt it was important to stand up for Sammy, and that at no point did you raise your voice or act inappropriately. HR acknowledges your concerns but reminds you  that you shouldn&#39;t turn to personal confrontations to solve workplace issues. You are told that in the future, you should leave any issues like this with HR. You’re given a warning and advised to avoid further confrontation with Josh.
+
+[[Accept your punishment and move on, not wanting to bring anymore trouble to yourself-&gt;Sammy Withdrawals]]
+[[Approach Sammy, and ask her to file a complaint about Josh-&gt;Feel Bad]]</tw-passagedata><tw-passagedata pid="53" name="Insist that Josh" tags="" position="2700,575" size="100,100">During the HR meeting, you suggest that it was Josh&#39;s behavior that was actually inappropriate and that his comments towards Sammy were not just discipline, but instead discrimination. You request that HR speak directly with Sammy to get her side of the story. HR agrees to investigate further and assures you they will follow up with Sammy to gather her perspective before making any decisions.
+
+[[Approach Sammy and tell her to be honest with HR, and to not let them downplay Josh&#39;s Behavior.-&gt;Approach Sammy]]
+[[Approach Sammy and tell her to exagurate Joshs behavior so that he is fired-&gt;Approach Sammy 2]]
+</tw-passagedata><tw-passagedata pid="54" name="Approach Sammy" tags="" position="2675,850" size="100,100">A few hours after Sammy&#39;s meeting with HR you receive an email from your district manager informing you that Josh was fired. Soon after this Sammy herself comes to your office to discuss the situation. She tells you that HR was very accommodating with her. Saying that they had actually had a number of reports about Josh, but due to a past false report about him, and his teams stellar performance, they were reluctant to pursue the matter. However in this case Sammy&#39;s statement about Josh was backed up by another employee who happened to have overheard the situation, and given that their stories aligned, they had no choice but to believe her. You feel good about your decision to suggest honesty.
+
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="55" name="Approach Sammy 2" tags="" position="2850,725" size="100,100">You decide to talk with Sammy about the investigation. You tell her that you stuck your neck out for her, and that you would appreciate if she embellished Josh&#39;s remarks so that he would be fired instead of just disciplined, as you don&#39;t think he is a good person to work with. Sammy is reluctant, but you pressure her saying that, it will be best for the company and for our working lives if he is removed.
+
+[[Continue-&gt;Mixed Ending]]</tw-passagedata><tw-passagedata pid="56" name="Mixed Ending" tags="" position="2850,850" size="100,100">After talking with Sammy, the HR department decides to limit the potential for a discrimination lawsuit. They don&#39;t seem to fully believe Sammy, at least not enough to fire Josh. But he is reassigned to a different building, so at least the two of you wont have to worry about Josh and his bullying going forward. However you wonder if you went about this in the right way, and whether embellishing the details of the indecent was the reason that Josh was merely reassigned. Maybe HR thinks that you and Sammy simply disliked Josh, and will consider you both as troublemakers. You hope that you made the right choice in the end.
+
+[[Restart|Start]]</tw-passagedata><tw-passagedata pid="57" name="Feel Bad" tags="" position="3050,925" size="100,100">You feel bad about how things went with HR, and you feel that Josh got the best of the situation by beating you to HR when he filed his report. Now that you have been reported for making false accusations, you feel that may not be believe in the future if you make coomplaint, so you decide to approach Sammy to try to get her to file a complaint about Josh.
+
+[[Continue-&gt;You talk to Sammy]]</tw-passagedata><tw-passagedata pid="58" name="You talk to Sammy" tags="" position="3175,1175" size="100,100">You talk to Sammy, and she agrees that Josh shouldnt be allowed to get away with making comments about her and others. She complains that nobody will stay with this company if this is the type of behavior that her managers display. She asks you how she should approach this situation, and wonders what you think she should do.
+
+[[Tell Sammy to embellish the situation so that Josh is fired.-&gt;Mixed Ending]]
+[[Tell Sammy to go to HR, and to be honest about what happened.-&gt;Approach Sammy]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
